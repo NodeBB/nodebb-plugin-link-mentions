@@ -1,0 +1,52 @@
+{
+  "name": "nodebb-plugin-link-mentions",
+  "version": "0.0.1",
+  "description": "NodeBB plugin that allows adding custom mentions to preconfigured links by prepending '^' to their corresponding keywords",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NodeBB/nodebb-plugin-link-mentions"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "quickstart",
+    "shell"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "author": {
+    "name": "Julian Lam",
+    "email": "julian@nodebb.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NodeBB/nodebb-plugin-link-mentions/issues"
+  },
+  "readmeFilename": "README.md",
+  "nbbpm": {
+    "compatibility": "^1.15.0"
+  },
+  "dependencies": {
+    "xregexp": "^5.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "12.0.1",
+    "@commitlint/config-angular": "12.0.1",
+    "eslint": "7.22.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.22.1",
+    "husky": "5.2.0",
+    "lint-staged": "10.5.4"
+  }
+}

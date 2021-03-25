@@ -1,0 +1,26 @@
+{
+	"id": "nodebb-plugin-link-mentions",
+	"url": "https://github.com/NodeBB/nodebb-plugin-link-mentions",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "static:app.load", "method": "init" },
+		{ "hook": "static:api.routes", "method": "addRoutes" },
+		{ "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
+		{ "hook": "filter:settings.set", "method": "validateSettings" },
+		{ "hook": "filter:parse.post", "method": "parsePost" },
+		{ "hook": "filter:parse.raw", "method": "parseRaw" }
+	],
+	"staticDirs": {
+		"static": "./static"
+	},
+	"less": [
+		"static/style.less"
+	],
+	"scripts": [
+		"static/lib/lm-autofill.js"
+	],
+	"acpScripts": [
+		"static/lib/admin.js"
+	],
+	"templates": "static/templates"
+}
