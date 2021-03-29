@@ -43,6 +43,10 @@ plugin.validateSettings = function (data) {
 		return data;
 	}
 
+	if (!Array.isArray(settings['mention-list'])) {
+		settings['mention-list'] = [];
+	}
+
 	const keywords = settings['mention-list'].map(pair => pair.keyword);
 
 	data.settings = {
@@ -64,6 +68,9 @@ plugin.validateSettings = function (data) {
 socketPlugins.linkMentions.keywordSearch = async function (socket, data) {
 	const query = data.query || '';
 	const settings = await meta.settings.get(PLUGIN_HASH);
+	if (!settings || !Array.isArray(settings['mention-list'])) {
+		return [];
+	}
 	return settings['mention-list'].map(pair => pair.keyword).filter(k => k.startsWith(query));
 };
 
