@@ -1,7 +1,7 @@
 {
   "name": "nodebb-plugin-link-mentions",
   "version": "0.0.4",
-  "description": "NodeBB plugin that allows adding custom mentions to preconfigured links by prepending '^' to their corresponding keywords",
+  "description": "NodeBB plugin that allows adding custom mentions to preconfigured links by prepending '|' to their corresponding keywords",
   "main": "library.js",
   "repository": {
     "type": "git",
