@@ -15,7 +15,7 @@ define('admin/plugins/link-mentions', ['settings'], function (settings) {
 		$('#save').on('click', saveSettings);
 
 		$mentionListCon = $('[data-sorted-list="mention-list"]');
-		$pair = $('.quick-form .form-group');
+		$pair = $('.quick-form div');
 		$pairInputs = $pair.find('input');
 		$('#add-pair').on('click', addPair);
 	};
@@ -30,14 +30,7 @@ define('admin/plugins/link-mentions', ['settings'], function (settings) {
 	}
 
 	function saveSettings() {
-		settings.save(PLUGIN_HASH, $('.link-mentions-settings'), function () {
-			app.alert({
-				type: 'success',
-				alert_id: 'link-mentions-saved',
-				title: 'Settings Saved',
-				timeout: 5000,
-			});
-		});
+		settings.save(PLUGIN_HASH, $('.link-mentions-settings'));
 	}
 
 	return ACP;
