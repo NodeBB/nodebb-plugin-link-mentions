@@ -41,8 +41,8 @@
     "xregexp": "^5.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.0.3",
-    "@commitlint/config-angular": "19.0.3",
+    "@commitlint/cli": "19.1.0",
+    "@commitlint/config-angular": "19.1.0",
     "eslint": "8.57.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.29.1",
