@@ -28,13 +28,12 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/runtime-corejs3@^7.12.1":
-  version "7.13.10"
-  resolved "https://registry.npmjs.org/@babel/runtime-corejs3/-/runtime-corejs3-7.13.10.tgz"
-  integrity sha512-x/XYVQ1h684pp1mJwOV4CyvqZXqbc8CMsMGUnAbuc82ZCdv1U63w5RSUzgDSXQHG5Rps/kiksH6g2D5BuaKyXg==
+"@babel/runtime-corejs3@^7.26.9":
+  version "7.29.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.29.2.tgz#cb86ad06e7a1d39224afb12a874301085e071846"
+  integrity sha512-Lc94FOD5+0aXhdb0Tdg3RUtqT6yWbI/BbFWvlaSJ3gAb9Ks+99nHRDKADVqC37er4eCB0fHyWT+y+K3QOvJKbw==
   dependencies:
-    core-js-pure "^3.0.0"
-    regenerator-runtime "^0.13.4"
+    core-js-pure "^3.48.0"
 
 "@commitlint/cli@20.5.2":
   version "20.5.2"
@@ -728,10 +727,10 @@ conventional-commits-parser@^6.3.0:
     "@simple-libs/stream-utils" "^1.2.0"
     meow "^13.0.0"
 
-core-js-pure@^3.0.0:
-  version "3.9.1"
-  resolved "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.9.1.tgz"
-  integrity sha512-laz3Zx0avrw9a4QEIdmIblnVuJz8W51leY9iLThatCsFawWxC3sE4guASC78JbCin+DkwMpCdp1AVAuzL/GN7A==
+core-js-pure@^3.48.0:
+  version "3.49.0"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.49.0.tgz#ff8436b7251a3832f5fdbbe3e10f7f2e58e51fb1"
+  integrity sha512-XM4RFka59xATyJv/cS3O3Kml72hQXUeGRuuTmMYFxwzc9/7C8OYTaIR/Ji+Yt8DXzsFLNhat15cE/JP15HrCgw==
 
 cosmiconfig-typescript-loader@^6.1.0:
   version "6.1.0"
@@ -2618,11 +2617,6 @@ reflect.getprototypeof@^1.0.6, reflect.getprototypeof@^1.0.9:
     get-proto "^1.0.1"
     which-builtin-type "^1.2.1"
 
-regenerator-runtime@^0.13.4:
-  version "0.13.7"
-  resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz"
-  integrity sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
-
 regexp.prototype.flags@^1.4.3:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/regexp.prototype.flags/-/regexp.prototype.flags-1.4.3.tgz#87cab30f80f66660181a3bb7bf5981a872b367ac"
@@ -3393,11 +3387,11 @@ wrap-ansi@^9.0.0:
     strip-ansi "^7.1.0"
 
 xregexp@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.npmjs.org/xregexp/-/xregexp-5.0.1.tgz"
-  integrity sha512-flG0ykxHQLOfF886GpnY26WQkj4/RmcxYvoVcSFbg+1lPMdnXEPoTKuLzw1olKnJ+o2Wc1+RCD1oktV4bYzVlQ==
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/xregexp/-/xregexp-5.1.2.tgz#ae4979868313d2f4dc4da9ab31ff5c2352fb969e"
+  integrity sha512-6hGgEMCGhqCTFEJbqmWrNIPqfpdirdGWkqshu7fFZddmTSfgv5Sn9D2SaKloR79s5VUiUlpwzg3CM3G6D3VIlw==
   dependencies:
-    "@babel/runtime-corejs3" "^7.12.1"
+    "@babel/runtime-corejs3" "^7.26.9"
 
 y18n@^5.0.5:
   version "5.0.5"
