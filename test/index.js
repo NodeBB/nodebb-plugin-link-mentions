@@ -2,7 +2,7 @@
 
 const assert = require('assert');
 
-const meta = require.main.require('./src/meta');
+const meta = nodebb.require('./src/meta');
 
 const plugin = require('../library');
 

@@ -1,11 +1,9 @@
 'use strict';
 
-/* globals $, app, define */
-
 define('admin/plugins/link-mentions', ['settings'], function (settings) {
 	const PLUGIN_HASH = 'link-mentions';
 
-	var ACP = {};
+	const ACP = {};
 	let $mentionListCon;
 	let $pair;
 	let $pairInputs;

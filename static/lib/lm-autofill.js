@@ -1,7 +1,5 @@
 'use strict';
 
-/* globals $, document, socket, window */
-
 $(document).ready(function () {
 	const SYMBOL = '|';
 

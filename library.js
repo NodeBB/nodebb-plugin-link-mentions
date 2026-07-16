@@ -2,10 +2,10 @@
 
 const XRegExp = require('xregexp');
 
-const meta = require.main.require('./src/meta');
-const slugify = require.main.require('./src/slugify');
-const socketPlugins = require.main.require('./src/socket.io/plugins');
-const utils = require.main.require('./src/utils');
+const meta = nodebb.require('./src/meta');
+const slugify = nodebb.require('./src/slugify');
+const socketPlugins = nodebb.require('./src/socket.io/plugins');
+const utils = nodebb.require('./src/utils');
 
 const controllers = require('./lib/controllers');
 const utility = require('./lib/utility');
@@ -22,7 +22,7 @@ const isLatinMention = /@[\w\d\-_.]+$/;
 
 plugin.init = async (params) => {
 	const { router } = params;
-	const routeHelpers = require.main.require('./src/routes/helpers');
+	const routeHelpers = nodebb.require('./src/routes/helpers');
 
 	routeHelpers.setupAdminPageRoute(router, '/admin/plugins/link-mentions', controllers.renderAdminPage);
 };
